@@ -10,7 +10,12 @@ export class AuthService {
     @InjectModel(Auth.name)
     private readonly authmodel: Model<AuthDocument>,
   ) {}
+  // eslint-disable-next-line prettier/prettier
   async create(createAuthDto:CreateAuthDto): Promise<AuthDocument | Error> {
     return await this.authmodel.create(createAuthDto);
+  }
+
+  async update() {
+    return await this.authmodel.find()
   }
 }
