@@ -10,7 +10,7 @@ export class AuthService {
     @InjectModel(Auth.name)
     private readonly authmodel: Model<AuthDocument>,
   ) {}
-  async create(createAuthDto:CreateAuthDto): Promise<AuthDocument | Error> {
+  async create(createAuthDto: CreateAuthDto): Promise<AuthDocument | Error> {
     return await this.authmodel.create(createAuthDto);
   }
 }
