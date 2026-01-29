@@ -2,6 +2,7 @@
 
 
 
+
 class A{
     hi(){
         console.log('hey');
