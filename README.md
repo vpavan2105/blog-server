@@ -1,4 +1,5 @@
-@nestjs/common  -> core nestjs decorators
+**@nestjs/common  -> core nestjs decorators**
+
 
 
 class A{
@@ -29,3 +30,11 @@ class B {
 
 const obj = new B(container.CA)
 obj.talk()
+
+
+DI : Dependency Injection
+
+    A place where nestjs stores and manages all services and dependencies
+
+
+singleton instance means creating the service only once and reuses it everywhere.
